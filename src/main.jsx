@@ -7,6 +7,11 @@ const BookList = () => {
   return (
     <section>
       <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   );
 };
@@ -21,10 +26,15 @@ const Book = () => {
   );
 };
 
-const Image = () => <h2>image placeholder</h2>;
-const Title = () => <h2>Book Title</h2>;
+const Image = () => (
+  <img
+    src='https://images-na.ssl-images-amazon.com/images/I/71sOqrd6JHL._AC_UL600_SR600,400_.jpg'
+    alt=''
+  />
+);
+const Title = () => <h2>Mom, I Want to Hear Your Story:</h2>;
 const Author = () => {
-  return <h4>Author</h4>;
+  return <h4> Jeffrey Mason</h4>;
 };
 
 createRoot(document.getElementById('root')).render(
